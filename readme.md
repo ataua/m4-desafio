@@ -11,4 +11,4 @@ O exercício inicial não compreendia o uso de Docker, porém achei essa soluç�
 
 As atualizações feitas nos arquivos da pasta **/html** serão atualizadas imediatamente (dar refresh na página). Os demais arquivos serão atualizados ao se recriar o conteiner ou a imagem. Para isso, pare o container e reinicie com o comando `docker compose up -d --build`.
 
-Desenvolvido por [Atauã Pinali Doederlein](https://github.com/ataua/ataua)
+Desenvolvido por [Atauã Pinali Doederlein](https://github.com/ataua)
