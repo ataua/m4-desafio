@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+
+  server:
+    build: .
+    image: m4_apache
+    container_name: m4_apache
+    restart: on-failure
+    ports:
+      - "80:8888"
+    volumes:
+      - ./html:/var/www/html
+      - ./apache2/apache2.conf:/etc/apache2/apache2.conf
+      - ./logs/site1:/srv/www/logs/site1.net/
+      - ./logs/site2:/srv/www/logs/site2.net/
+      - ./sites-available/site1.net.conf:/etc/apache2/sites-available/site1.net.conf
+      - ./sites-available/site2.net.conf:/etc/apache2/sites-available/site2.net.conf
+      - ./start.sh:/start.sh
+    command: [ "/bin/bash", "/start.sh" ]
+    extra_hosts:
+      - "modulo4:127.0.1.1"
