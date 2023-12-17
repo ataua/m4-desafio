@@ -9,6 +9,6 @@ O exercício inicial não compreendia o uso de Docker, porém achei essa soluç�
 4. Acessar pelo navegador o ip do conteiner, por exemplo: `172.30.0.2`
 5. Para parar o container, use o comando `docker compose down`  
 
-As atualizações feitas nos arquivos da pasta /html serão atualizadas imediatamente (dar refresh na página). Os demais arquivos serão atualizados ao se recriar o conteiner ou a imagem. Para isso, pare o container e reinicie com o comando `docker compose up -d --build`.
+As atualizações feitas nos arquivos da pasta **/html** serão atualizadas imediatamente (dar refresh na página). Os demais arquivos serão atualizados ao se recriar o conteiner ou a imagem. Para isso, pare o container e reinicie com o comando `docker compose up -d --build`.
 
-Desenvolvido por [Atauã Pinali Doederlein](https://github.com/ataua)
+Desenvolvido por [Atauã Pinali Doederlein](https://github.com/ataua/ataua)
